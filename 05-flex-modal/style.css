@@ -20,6 +20,9 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 10px;
+  /* Make modal a container, which makes left and right items */
+  display: flex;
 }
 
 .icon {
@@ -33,7 +36,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+  margin-right: 10px;
+  }
 
 .close-button {
   background: #eee;
@@ -46,6 +50,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+
 }
 
 button {
@@ -64,3 +70,53 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+
+.left {
+  display: flex;
+}
+
+.right {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  font-weight: 700;
+  font-size: larger;
+  display: flex;
+}
+
+.header, .text, button {
+  text-align: left;
+}
+
+.bottom {
+  gap: 10px;
+}
+
+.text {
+  margin: 10px 0px;
+}
+
+/* Solution
+
+.icon {
+  /* this keeps the icon from getting smashed by the text
+  flex-shrink: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.text {
+  margin-bottom: 16px;
+}
+
+*/
