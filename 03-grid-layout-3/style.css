@@ -89,3 +89,34 @@
   font-size: 13px;
   font-weight: normal;  
 }
+
+
+/* My solution */
+
+.container {
+  display: grid;
+  gap: 5px;
+
+  grid-template-rows: 2fr 1fr 6fr 1fr;
+  grid-template-columns: 1fr 4fr;
+}
+
+.header {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.sidebar {
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+.nav {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.article {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.footer {
+  grid-area: 4 / 1 / 5 / 3;
+}
