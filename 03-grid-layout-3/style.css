@@ -130,13 +130,15 @@ body {
 
 .logo {
   grid-area: 1 / 1 / 2 / 2;
-  border: 1px dashed white;
+
+  justify-self: flex-start;
+  align-self: center;
 }
 
 .menu {
   grid-area: 1 / 2 / 2 / 3;
-  border: 1px dashed white;
 
+  display: grid;
 }
 
 .menu > ul {
@@ -144,9 +146,9 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-/* .menu > ul > li {
+.menu > ul > li {
   align-self: center;
-} */
+}
 
 /* Sidebar Section */
 
